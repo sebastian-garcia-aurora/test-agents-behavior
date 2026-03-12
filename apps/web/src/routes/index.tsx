@@ -38,6 +38,11 @@ function HomeComponent() {
           </Button>
           {message && <p className="mt-2 text-sm text-muted-foreground">{message}</p>}
         </section>
+        <section className="rounded-lg border p-4">
+          <Button onClick={() => setMessage("Im frontend 2 engineer")}>
+            Im frontend 2 engineer
+          </Button>
+        </section>
       </div>
     </div>
   );
