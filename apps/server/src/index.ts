@@ -24,7 +24,7 @@ app.get("/", (c) => {
 });
 
 app.get("/health", (c) => {
-  return c.json({ status: "ok" });
+  return c.text("hi Im healthy!");
 });
 
 export default app;
