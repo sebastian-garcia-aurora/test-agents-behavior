@@ -13,15 +13,15 @@ Mandatory workflow for all coding tasks: isolate work in a git worktree, write t
 
 ### 1. Before Editing (MANDATORY)
 
-Create a worktree on a new branch under the project root's `.worktrees/` directory:
+Create a worktree on a new branch:
 
 ```bash
-git worktree add .worktrees/<feature-name> -b <feature-name>
+git worktree add ../worktrees/<feature-name> -b <feature-name>
 ```
 
 Work exclusively inside that worktree directory.
 
-**REQUIRED:** See superpowers:using-git-worktrees for worktree patterns (it handles `.gitignore` verification and directory selection).
+**REQUIRED:** See superpowers:using-git-worktrees for worktree patterns.
 
 ### 2. While Editing
 
@@ -35,11 +35,8 @@ Work exclusively inside that worktree directory.
 ### 3. When Complete
 
 1. Run the full test suite — all tests must pass
-2. Push the branch and create a PR with a summary of changes (preferred over local merge)
-3. Clean up: `git worktree remove .worktrees/<feature-name>`. DO NOT delete the branch
-4. Add a comment in paperclip issue with the things you have done and what skills and tools you used
-
-**REQUIRED:** See superpowers:finishing-a-development-branch for the full completion workflow including options and worktree cleanup.
+2. Create a PR with a summary of changes
+3. Clean up: `git worktree remove ../worktrees/<feature-name>`. DO NOT delete the branch
 
 ### 4. Continuous Learning
 
